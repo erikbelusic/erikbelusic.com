@@ -12,5 +12,7 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.copy('bower_components/normalize.css/normalize.css', 'resources/assets/css/normalize.css');
+    mix.sass('app.scss', 'resources/assets/css');
+    mix.styles(['normalize.css', 'app.css']);
 });

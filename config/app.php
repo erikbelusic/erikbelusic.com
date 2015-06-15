@@ -142,12 +142,13 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\FrontYamlServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
         /*
          * Package Service Providers
          */
-        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+
 
     ],
 
@@ -200,7 +201,7 @@ return [
         /*
          * Package Aliases
          */
-        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+
 
     ],
 

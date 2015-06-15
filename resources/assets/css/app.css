@@ -1,0 +1,25 @@
+body {
+  background: #EBF0F1; }
+
+.header {
+  min-height: 50px;
+  background: #3498DB; }
+
+.header-branding {
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 42px; }
+
+.nav {
+  min-height: 50px;
+  background: #BDC3C7; }
+
+.main {
+  min-height: 550px; }
+
+.footer {
+  min-height: 50px;
+  background: #333333; }
+
+/*# sourceMappingURL=app.css.map */
