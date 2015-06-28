@@ -424,7 +424,18 @@ th {
 }
 
 body {
-  background: #EBF0F1; }
+  background: #EBF0F1;
+  font-family: "Source Sans Pro";
+  font-weight: 300; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  font-family: "Source Sans Pro"; }
 
 .header {
   min-height: 50px;
@@ -434,11 +445,26 @@ body {
   text-align: center;
   line-height: 50px;
   color: white;
-  font-size: 42px; }
+  font-size: 42px;
+  padding: 10px 0;
+  font-family: "Source Sans Pro";
+  font-weight: 700; }
 
 .nav {
   min-height: 50px;
-  background: #BDC3C7; }
+  background: #2C3E50; }
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu__item {
+  display: inline-block; }
+
+.menu__link {
+  color: white;
+  text-decoration: none; }
 
 .main {
   min-height: 550px; }
@@ -446,6 +472,14 @@ body {
 .footer {
   min-height: 50px;
   background: #333333; }
+
+.article {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: white;
+  font-family: "Source Sans Pro";
+  font-weight: 300; }
 
 /*# sourceMappingURL=app.css.map */
 /*# sourceMappingURL=all.css.map */

@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use App\Services\YamlMarkdownParser;
 use Illuminate\Support\ServiceProvider;
 use Mni\FrontYAML\Bridge\CommonMark\CommonMarkParser;
+use Mni\FrontYAML\Parser;
 
 class FrontYamlServiceProvider extends ServiceProvider
 {
@@ -25,10 +25,8 @@ class FrontYamlServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('FrontYaml', function ($app) {
-            return new YamlMarkdownParser(null, new CommonMarkParser());
+        $this->app->singleton('Mni\FrontYAML\Parser', function () {
+            return new Parser(null, new CommonMarkParser());
         });
-
-        $this->app->bind('App\Contracts\YamlMarkdownParserContract', 'FrontYaml');
     }
 }
